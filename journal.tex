@@ -5,6 +5,7 @@
 \usepackage[strict]{csquotes}
 \usepackage[natbib,style=alphabetic,maxbibnames=99,backend=bibtexu]{biblatex}
 \addbibresource{journal.bib}
+\usepackage{makeidx}
 
 %\includeonly{january}
 
@@ -18,6 +19,8 @@
 \newcommand{\references}{%
   \printbibliography[title={References},heading=subbibliography]%
 }
+\newcommand{\topic}[1]{#1\index{#1}\marginnote{#1}}
+\makeindex
 
 \begin{document}
 \maketitle
@@ -36,4 +39,5 @@
 %\include{november}
 %\include{december}
 
+\printindex
 \end{document}
