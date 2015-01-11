@@ -1,4 +1,5 @@
-journal.pdf: journal.tex journal.bib tufte-common.def
+journal.pdf: journal.tex journal.bib
+journal.pdf: tufte-common.def
 journal.pdf: january.tex
 
 journal.pdf:
